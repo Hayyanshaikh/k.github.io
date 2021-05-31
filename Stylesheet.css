@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Kanit', sans-serif;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+.top{
+	z-index: 1000;
+	float: right;
+	transform: translate(73pc,50pc);
+	position: fixed;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.2s;
+}
+.top a{
+	color: #111;
+	font-size: 2em;
+	border-radius: 50%;
+	padding: 10px 18px;
+    background: transparent;
+    font-weight: 300;
+    border: 2px solid #111;
+    transition: 0.1s;
+}
+.top a:hover{
+	background: #111;
+	color: #fff;
+	border: #fff;
+}
+.top.active{
+	visibility: visible;
+	opacity: 1;
+}
+.container{
+	position: relative;
+	background: url(image/bg.jpg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 60vh;
+	background-size: cover;
+}
+.container .content{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.container .content h2{
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 2px;
+	font-size: 3em;
+	border-bottom: 2px solid #fff;
+}
+.container .content p{
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 2px;
+	font-size: 1em;
+	font-weight: 700;
+	margin-top: 20px;
+}
+.container .content p span{
+	color: #fff;
+	font-size: 3em;
+}
+.container .content a{
+	position: relative;
+	padding: 5px 10px;
+	background: transparent;
+	border: 2px solid #fff;
+	left: 36%;
+	top: 30px;
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+	transition: 0.2s;
+}
+.container .content a:hover{
+	background: #111;
+	color: #fff;
+	border: 2px solid #111;
+}
+header{
+	background: #f1f1f1;
+	height: 50px;
+	width: 100%;
+	position: sticky;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 100;
+}
+header ul{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+header ul li{
+	padding: 100px;
+}
+header ul li a{
+	color: #777;
+	text-decoration: none;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 600;
+	transition: 0.2s;
+
+}
+header ul li a:hover{
+	letter-spacing: 3px;
+	font-size: 0.9em;
+	color: #111;
+}
+.nav .fixed{
+	position: fixed !impotent;
+	top: 0;
+	left: 0;
+	bottom: initial;
+}
+.about{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 80vh;
+}
+.about .content2{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+.about .content2 h2{
+	color: #111;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 2px;
+	font-size: 2em;
+}
+.about .content2 .imgbx{
+	height: 150px;
+	width: 150px;
+	margin-top: 50px;
+	margin-left: 44%;
+	margin-bottom: 50px;
+	background: url(image/about.jpg);
+	background-size: cover;
+	border-radius: 50%;
+}
+.about .content2 p{
+	color: #777;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 13px;
+	font-weight: 300;
+	margin: 10px 20pc;
+}
+.about .content2 a{
+	position: relative;
+	padding: 5px 10px;
+	background: transparent;
+	border: 2px solid #111;
+	left: 45%;
+	top: 30px;
+	color: #111;
+	text-decoration: none;
+	cursor: pointer;
+	transition: 0.2s;
+}
+.about .content2 a:hover{
+	background: #111;
+	color: #fff;
+}
+
+.portfolio{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 80vh;
+	background: #f1f1f1;
+}
+.portfolio .content3{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+.portfolio .content3 h2{
+	color: #111;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 2px;
+	font-size: 2em;
+}
+.portfolio .content3 .imgs{
+	position: relative;
+	top: 6pc;
+	left: 1pc;
+	height: 600px;
+	width: 600px;
+}
+.portfolio .content3 .imgs img{
+	height: 100px;
+	width: 100px;
+	margin: 5px;
+	cursor: pointer;
+}
+.portfolio .content3 p{
+	color: #777;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 13px;
+	font-weight: 300;
+	margin: 10px 20pc;
+}
+.portfolio .content3 a{
+	position: relative;
+	padding: 5px 10px;
+	margin-left: 10px;
+	background: transparent;
+	border: 2px solid #111;
+	left: 11%;
+	top: 50px;
+	color: #111;
+	text-decoration: none;
+	cursor: pointer;
+	transition: 0.2s;
+}
+.portfolio .content3 a:hover{
+	background: #111;
+	color: #fff;
+}
+.contact{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+}
+.contact h2{
+	color: #111;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 2px;
+	font-size: 2em;
+}
+.contact input{
+	margin-top: 50px;
+	padding: 5px;
+	width: 15pc;
+	color: #555;
+	outline: none;
+}
+.contact textarea{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+	padding: 5px;
+	width: 30pc;
+	height: 10pc;
+	color: #555;
+	outline: none;
+}
+.contact a{
+	position: relative;
+	padding: 5px 10px;
+	margin-left: 10px;
+	background: transparent;
+	border: 2px solid #111;
+	left: 35%;
+	top: 50px;
+	color: #111;
+	text-decoration: none;
+	cursor: pointer;
+	transition: 0.2s;
+}
+.contact a:hover{
+	background: #111;
+	color: #fff;
+}
+footer{
+	height: 50px;
+	width: 100%;
+	background: #f1f1f1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer span{
+	display: cetner;
+	justify-content: center;
+	align-items: center;
+	font-size: 1em;
+	letter-spacing: 1px;
+	text-align: center;
+	color: #888;
+}
+footer span a{
+	letter-spacing: 1px;
+	text-align: center;
+	color: #666;
+	text-decoration: none;
+}
